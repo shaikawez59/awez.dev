@@ -50,20 +50,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@example.com',
-      href: 'mailto:hello@example.com'
+      value: 'shaikawez59@gmail.com',
+      href: 'mailto:shaikawez59@gmail.com'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Hyderabad, Telangana',
       href: null
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 85199 27639',
+      href: 'tel:+918519927639'
     }
   ];
 
@@ -71,19 +71,19 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/shaikawez59',
       color: 'hover:text-gray-900'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/shaikawez59/',
       color: 'hover:text-blue-600'
     },
     {
       icon: Twitter,
       label: 'Twitter',
-      href: 'https://twitter.com',
+      href: 'https://x.com/shaikawez59',
       color: 'hover:text-blue-400'
     }
   ];

@@ -97,7 +97,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <a 
-              href="https://github.com" 
+              href="https://github.com/shaikawez59" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="GitHub profile"
@@ -106,7 +106,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="www.linkedin.com/in/shaikawez59" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
@@ -115,7 +115,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:hello@example.com"
+              href="mailto:shaikawez59@gmail.com"
               aria-label="Send email"
               className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110"
             >

@@ -11,8 +11,8 @@ const Navigation = () => {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Blog', href: '#blog' },
+    // { label: 'Experience', href: '#experience' },
+    // { label: 'Blog', href: '#blog' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-poppins font-bold text-primary">
-            Portfolio
+            Shaik Awez
           </div>
 
           {/* Desktop Navigation */}

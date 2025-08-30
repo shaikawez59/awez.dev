@@ -40,7 +40,7 @@ const Footer = () => {
               {/* Brand & Description */}
               <div className="space-y-4">
                 <h3 className="text-2xl font-poppins font-bold">
-                  Portfolio
+                  shaik Awez
                 </h3>
                 <p className="text-primary-foreground/80 leading-relaxed">
                   Self-taught developer passionate about building innovative solutions 
@@ -48,7 +48,7 @@ const Footer = () => {
                 </p>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/shaikawez59" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary-foreground/60 hover:text-accent transition-all duration-300 hover:scale-110"
@@ -57,7 +57,7 @@ const Footer = () => {
                     <Github className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="www.linkedin.com/in/shaikawez59" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary-foreground/60 hover:text-accent transition-all duration-300 hover:scale-110"
@@ -66,7 +66,7 @@ const Footer = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="mailto:hello@example.com"
+                    href="mailto:shaikawez59@gmail.com"
                     className="text-primary-foreground/60 hover:text-accent transition-all duration-300 hover:scale-110"
                     aria-label="Email"
                   >
@@ -84,8 +84,8 @@ const Footer = () => {
                   {[
                     { label: 'About', href: '#about' },
                     { label: 'Projects', href: '#projects' },
-                    { label: 'Experience', href: '#experience' },
-                    { label: 'Blog', href: '#blog' },
+                    // { label: 'Experience', href: '#experience' },
+                    // { label: 'Blog', href: '#blog' },
                     { label: 'Contact', href: '#contact' }
                   ].map((link) => (
                     <button
@@ -102,7 +102,7 @@ const Footer = () => {
               {/* Latest Posts */}
               <div className="space-y-4">
                 <h4 className="text-lg font-poppins font-semibold">
-                  Latest Posts
+                  Latest Projects
                 </h4>
                 <div className="space-y-3">
                   {[
@@ -133,7 +133,7 @@ const Footer = () => {
                 </div>
                 
                 <div className="text-primary-foreground/80 text-sm">
-                  © 2024 Portfolio. All rights reserved.
+                  © 2025 Shaik Awez. All rights reserved.
                 </div>
               </div>
             </div>
