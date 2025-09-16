@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Portfolio color palette */
+    --border: 210 13% 91%;
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+    
+    /* Text colors */
+    --text-primary: 210 11% 15%;
+    --text-secondary: 210 8% 40%;
+    --text-muted: 210 8% 60%;
+    
+    /* UI colors */
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+    --card-border: 210 13% 91%;
+    
+    --button-primary: 210 11% 15%;
+    --button-primary-foreground: 0 0% 100%;
+    --button-primary-hover: 210 11% 10%;
+    
+    --button-secondary: 210 16% 96%;
+    --button-secondary-foreground: 210 11% 15%;
+    --button-secondary-hover: 210 16% 90%;
+    
+    --input-border: 210 13% 91%;
+    --input-focus: 210 11% 15%;
+    
+    /* Portfolio specific */
+    --nav-active: 210 11% 15%;
+    --nav-active-foreground: 0 0% 100%;
+    --nav-inactive: 210 11% 15%;
+    --nav-inactive-hover: 210 16% 96%;
+    
+    --project-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --project-shadow-hover: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --border: 210 11% 15%;
+    --background: 210 11% 4%;
+    --foreground: 210 40% 95%;
+    
+    --text-primary: 210 40% 95%;
+    --text-secondary: 210 15% 70%;
+    --text-muted: 210 15% 50%;
+    
+    --card: 210 11% 6%;
+    --card-foreground: 210 40% 95%;
+    --card-border: 210 11% 15%;
+    
+    --button-primary: 210 40% 95%;
+    --button-primary-foreground: 210 11% 4%;
+    --button-primary-hover: 210 40% 98%;
+    
+    --nav-active: 210 40% 95%;
+    --nav-active-foreground: 210 11% 4%;
+    --nav-inactive: 210 40% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
