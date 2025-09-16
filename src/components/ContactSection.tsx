@@ -1,25 +1,44 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    emailjs
+    .send(
+      "service_m0mv60j",    // from EmailJS
+      "template_1h8bd3c",   // from EmailJS
+      formData,
+      "rmnaFjQ8e7p1RBfih"     // from EmailJS account
+    )
+    .then(
+      () => {
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      },
+      (error) => {
+        console.error("Email error:", error);
+        alert("Failed to send message. Please try again.");
+      }
+    );
   };
 
   return (
@@ -30,7 +49,7 @@ export default function ContactSection() {
       className="max-w-3xl mb-auto"
     >
       <div className="flex items-center justify-center w-full flex-col mb-auto mt-5">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -38,7 +57,7 @@ export default function ContactSection() {
         >
           Get in Touch
         </motion.h1>
-        
+
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
           <motion.input
             initial={{ opacity: 0, x: -20 }}
@@ -52,7 +71,7 @@ export default function ContactSection() {
             placeholder="Enter your name"
             required
           />
-          
+
           <motion.input
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -65,7 +84,7 @@ export default function ContactSection() {
             placeholder="Enter your email"
             required
           />
-          
+
           <motion.textarea
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -78,8 +97,8 @@ export default function ContactSection() {
             placeholder="How can I help you?"
             required
           />
-          
-          <motion.button 
+
+          <motion.button
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -91,17 +110,17 @@ export default function ContactSection() {
             Send Message
           </motion.button>
         </form>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
           className="mt-8 text-center"
         >
           <p className="text-text-secondary text-sm">
-            Or reach out to me directly at{' '}
-            <a 
-              href="mailto:hello@alexjohnson.dev" 
+            Or reach out to me directly at{" "}
+            <a
+              href="mailto:shaikawez59@gmail.com"
               className="text-button-primary hover:underline"
             >
               contact@awez.dev

@@ -9,7 +9,7 @@ export default function Social() {
         <a 
           target="_blank" 
           rel="noreferrer" 
-          href="https://twitter.com" 
+          href="https://x.com/shaikawez59" 
           className="transition-transform hover:scale-110"
         >
           <img
@@ -24,7 +24,7 @@ export default function Social() {
         <a 
           target="_blank" 
           rel="noreferrer" 
-          href="https://github.com"
+          href="https://github.com/shaikawez59"
           className="transition-transform hover:scale-110"
         >
           <img
@@ -39,7 +39,7 @@ export default function Social() {
         <a 
           target="_blank" 
           rel="noreferrer" 
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/shaikawez59/"
           className="transition-transform hover:scale-110"
         >
           <img
