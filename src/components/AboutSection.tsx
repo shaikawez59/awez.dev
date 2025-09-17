@@ -111,7 +111,7 @@ export default function AboutSection() {
 
       <div className="mt-8 pt-8 border-t border-border">
         <h3 className="text-xl font-medium mb-4 text-text-primary">Skills</h3>
-        <div className="flex flex-wrap sm:flex-row sm:items-center sm:justify-start">
+        <div className="flex flex-wrap sm:flex-row sm:items-center sm:justify-start gap-2">
           <svg
             className="w-10 hover:scale-110 transition-all duration-300"
             xmlns="http://www.w3.org/2000/svg"
