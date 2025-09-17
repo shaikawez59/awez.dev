@@ -78,6 +78,37 @@ export default function AboutSection() {
         </div>
       </div>
 
+      <div className="mt-16 border-t border-border pt-8">
+        <h1 className="font-medium text-text-primary mb-4 text-lg">
+          Experience
+        </h1>
+        <ol className="relative border-s border-card-border">
+          <li className="mb-10 ms-4">
+            <div className="flex flex-row items-center gap-2">
+              <div className="absolute w-3 h-3 bg-nav-active rounded-full mt-1.5 -start-1.5 border border-background" />
+              <div className="text-md font-medium text-text-primary">
+                Full Stack Developer
+              </div>
+              <div className="inline-block ml-2 text-xs rounded-full px-2 py-1 bg-button-secondary text-button-secondary-foreground">
+                Present
+              </div>
+            </div>
+            <div className="mb-4 text-sm font-normal text-text-secondary">
+              Freelancer
+            </div>
+          </li>
+          {/* <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-card-border rounded-full mt-1.5 -start-1.5 border border-background" />
+            <div className="text-md font-medium text-text-primary">
+              Frontend Developer
+            </div>
+            <div className="mb-4 text-sm font-normal text-text-secondary">
+              StartupXYZ
+            </div>
+          </li> */}
+        </ol>
+      </div>
+
       <div className="mt-8 pt-8 border-t border-border">
         <h3 className="text-xl font-medium mb-4 text-text-primary">Skills</h3>
         <div className="flex flex-wrap sm:flex-row sm:items-center sm:justify-start">
@@ -406,35 +437,6 @@ export default function AboutSection() {
           />
         </div>
       </div>
-
-      {/* <div className="mt-16">
-        <h1 className="font-medium text-text-primary mb-4 text-lg">Experience</h1>
-        <ol className="relative border-s border-card-border">
-          <li className="mb-10 ms-4">
-            <div className="flex flex-row items-center gap-2">
-              <div className="absolute w-3 h-3 bg-nav-active rounded-full mt-1.5 -start-1.5 border border-background" />
-              <div className="text-md font-medium text-text-primary">
-                Senior Full Stack Developer
-              </div>
-              <div className="inline-block ml-2 text-xs rounded-full px-2 py-1 bg-button-secondary text-button-secondary-foreground">
-                Present
-              </div>
-            </div>
-            <div className="mb-4 text-sm font-normal text-text-secondary">
-              TechCorp Solutions
-            </div>
-          </li>
-          <li className="mb-10 ms-4">
-            <div className="absolute w-3 h-3 bg-card-border rounded-full mt-1.5 -start-1.5 border border-background" />
-            <div className="text-md font-medium text-text-primary">
-              Frontend Developer
-            </div>
-            <div className="mb-4 text-sm font-normal text-text-secondary">
-              StartupXYZ
-            </div>
-          </li>
-        </ol>
-      </div> */}
 
       {/* <div className="mt-16">
         <h1 className="font-medium text-text-primary mb-4 text-lg">Projects</h1>
