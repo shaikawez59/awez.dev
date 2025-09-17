@@ -78,7 +78,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="mt-16 border-t border-border pt-8">
+      <div className="mt-8 border-t border-border pt-8">
         <h1 className="font-medium text-text-primary mb-4 text-lg">
           Experience
         </h1>
@@ -436,6 +436,10 @@ export default function AboutSection() {
             src={python}
           />
         </div>
+      </div>
+
+      <div className="mt-8 pt-8 border-t border-border flex justify-center w-full text-text-muted">
+        <p>© 2025 Shaik Awez</p>
       </div>
 
       {/* <div className="mt-16">
